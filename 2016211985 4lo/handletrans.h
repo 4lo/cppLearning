@@ -1,0 +1,7 @@
+#pragma once
+/*ÇÐ»»×óÓÒÆÁ*/
+void left();
+void right();
+void recre();
+
+
