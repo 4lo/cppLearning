@@ -2,13 +2,17 @@
 /*圆类（空心）*/
 #include "Coordinate.h"
 #include "Color.h"
-class Circle
+#include "Shape.h"
+class Circle : public Shape
 {
 public:
+	Circle(const Circle& a);
 	Circle(int radius, Coordinate Circle);//圆形构造函数
 	~Circle();
 	static int circleNumber;//圆形计数
 	int getCircleNumber();//获得圆形个数
+	void draw();
+	int getRadius();
 private:
 	int Radius;//半径
 	Coordinate CircleXY;//圆心坐标

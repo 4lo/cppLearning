@@ -41,3 +41,8 @@ void Coordinate::setY(int y)//对y坐标进行设置
 {
 	this->y = y;
 }
+
+std::string Coordinate::getXYs()
+{
+	return "00";
+}
