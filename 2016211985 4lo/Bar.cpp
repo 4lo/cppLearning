@@ -1,6 +1,5 @@
 #include "Bar.h"
 #include "graphics.h"
-#include "string"
 using namespace std;
 int Bar::barNumber = 0;
 
@@ -36,6 +35,21 @@ int Bar::getBarNumber()
 void Bar::draw()
 {
 	//int a[3] = barColor.getColor();
-	setfillcolor(RED);
+	setfillcolor(getColor());
 	bar(leftup.getX(), leftup.getY(), rightdown.getX(), rightdown.getY());
+}
+
+void Bar::save()
+{
+
+}
+
+Coordinate Bar::getLeftup()
+{
+	return leftup;
+}
+
+Coordinate Bar::getRightdown()
+{
+	return rightdown;
 }

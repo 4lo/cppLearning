@@ -13,6 +13,9 @@ public:
 	Shape();
 	~Shape();
 	virtual void draw() = 0;
+	virtual void save() = 0;
+	void setColor(Color color);
+	ege::color_t getColor();
 	static int ShapeNumber;
 };
 

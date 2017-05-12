@@ -1,11 +1,10 @@
 #pragma once
 /*矩形类*/
-#include "Coordinate.h"
 #include "Color.h"
-#include <string>
-#include <graphics.h>
 #include "handletrans.h"
 #include "Shape.h"
+#include <fstream>
+static int trueBarNumber = 0;
 class Bar : public Shape
 {
 public:
@@ -15,6 +14,9 @@ public:
 	static int barNumber;//用于全局记录矩形的数量
 	int getBarNumber();//数量get函数
 	void draw();
+	void save();
+	Coordinate getLeftup();
+	Coordinate getRightdown();
 private:
 	Coordinate leftup;//左上角坐标
 	Coordinate rightdown;//右下角坐标

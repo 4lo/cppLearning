@@ -23,9 +23,11 @@
     <ClInclude Include="Circle.h" />
     <ClInclude Include="Color.h" />
     <ClInclude Include="Coordinate.h" />
+    <ClInclude Include="delta.h" />
     <ClInclude Include="documents.h" />
     <ClInclude Include="GraphicsControl.h" />
     <ClInclude Include="handletrans.h" />
+    <ClInclude Include="poly.h" />
     <ClInclude Include="Shape.h" />
   </ItemGroup>
   <ItemGroup>
@@ -33,9 +35,11 @@
     <ClCompile Include="Circle.cpp" />
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="Coordinate.cpp" />
+    <ClCompile Include="delta.cpp" />
     <ClCompile Include="documents.cpp" />
     <ClCompile Include="GraphicsControl.cpp" />
     <ClCompile Include="handletrans.cpp" />
+    <ClCompile Include="poly.cpp" />
     <ClCompile Include="project.cpp" />
     <ClCompile Include="Shape.cpp" />
   </ItemGroup>

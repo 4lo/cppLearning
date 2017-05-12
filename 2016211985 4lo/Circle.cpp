@@ -40,3 +40,8 @@ void Circle::draw()
 {
 	circle(CircleXY.getX(), CircleXY.getY(), Radius);
 }
+
+void Circle::save()
+{
+
+}

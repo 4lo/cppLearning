@@ -1,17 +1,18 @@
 #pragma once
 /*颜色类*/
 #include<string>
+#include<graphics.h>
 using std::string;
 class Color
 {
 public:
 	Color();
-	Color(string color);//初始化颜色
-	void setColor(string color);//对颜色进行设置
-	std::string getColor();//获得颜色
+	Color(ege::color_t color);//初始化颜色
+	void setColor(ege::color_t color);//对颜色进行设置
+	ege::color_t getColor();//获得颜色
 	
 private:
 	bool isColored;
-	std::string color;
+	ege::color_t color;
 };
 
