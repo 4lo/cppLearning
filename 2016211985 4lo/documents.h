@@ -1,10 +1,13 @@
 #pragma once
 //将来用于存储图形信息，等以后用文件进行保存
 #include <fstream>
-#include "Shape.h"
+#include <string>
+#include "Coordinate.h"
+#include "Color.h"
 #include "Bar.h"
-#include "Circle.h"
-#include "delta.h"
-using std::ofstream;
+#include <graphics.h>
+using std::string;
+using std::ifstream;
+using namespace std;
 
-void save(Shape* shape);
+void readfile(string a, int number);

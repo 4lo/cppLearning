@@ -1,5 +1,4 @@
 #include "Circle.h"
-#include "graphics.h"
 
 int Circle::circleNumber = 0;
 
@@ -41,7 +40,17 @@ void Circle::draw()
 	circle(CircleXY.getX(), CircleXY.getY(), Radius);
 }
 
+Coordinate Circle::getCenter()
+{
+	return CircleXY;
+}
 void Circle::save()
 {
-
+	string temp = "CIRCLE\\CIRCLE" + to_string(circleNumber) + ".txt";
+	ofstream save(temp);
+	save << CircleXY.getX() << " "
+		<< CircleXY.getY() << " "
+		<< getRadius() << " "
+        << getColor() << endl;
+	save.close();
 }

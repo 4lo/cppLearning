@@ -1,5 +1,7 @@
 #pragma once
 #include "Shape.h"
+#include <graphics.h>
+#include <fstream>
 
 
 class Delta : public Shape

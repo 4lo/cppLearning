@@ -18,7 +18,7 @@ void Shape::setColor(Color color)
 	this->color = color;
 }
 
-ege::color_t Shape::getColor()
+int Shape::getColor()
 {
 	return color.getColor();
 }
