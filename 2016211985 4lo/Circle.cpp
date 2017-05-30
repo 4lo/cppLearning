@@ -31,7 +31,7 @@ Circle::Circle(int radius, Coordinate CircleXY)
 
 Circle::~Circle()
 {
-	//Circle::circleNumber--;//删除圆时数量—1
+	Circle::circleNumber--;//删除圆时数量—1
 	//xyprintf(100, 200, "存在%d个圆形", circleNumber);
 }
 

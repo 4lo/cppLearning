@@ -77,9 +77,6 @@
     <ClCompile Include="project.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Shape.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="delta.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -97,6 +94,9 @@
     </ClCompile>
     <ClCompile Include="ColorDisplay.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape.cpp">
+      <Filter>资源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

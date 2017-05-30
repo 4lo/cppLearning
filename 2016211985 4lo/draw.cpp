@@ -151,7 +151,7 @@ void draw(Shape &shape)
 				Sleep(500);
 				transToLeftPort();
 				int a[100], x = 0;
-				for (; is_run(); delay_fps(5))
+				for (; is_run(); delay_fps(10))
 				{
 					while (mousemsg())
 					{

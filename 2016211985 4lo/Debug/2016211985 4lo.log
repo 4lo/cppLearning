@@ -1,4 +1,20 @@
-﻿  Circle.cpp
+﻿  Shape.cpp
+  project.cpp
+  poly.cpp
+  menu.cpp
+  handletrans.cpp
+  GraphicsControl.cpp
+  eraser.cpp
+  draw.cpp
+c:\users\xxx\documents\github\cpplearning\2016211985 4lo\draw.cpp(173): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  delta.cpp
+  Coordinate.cpp
+  ColorDisplay.cpp
+  Color.cpp
+  Circle.cpp
+  Bar.cpp
+  正在生成代码...
+c:\users\xxx\documents\github\cpplearning\2016211985 4lo\graphicscontrol.cpp(29): warning C4717: “Graphics::closegraph”: 如递归所有控件路径，函数将导致运行时堆栈溢出
 graphicsd.lib(color.obj) : warning LNK4099: 未找到 PDB“graphics17.pdb”(使用“graphicsd.lib(color.obj)”或在“C:\Users\xxx\Documents\GitHub\cppLearning\2016211985 4lo\Debug\graphics17.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 graphicsd.lib(egecontrolbase.obj) : warning LNK4099: 未找到 PDB“graphics17.pdb”(使用“graphicsd.lib(egecontrolbase.obj)”或在“C:\Users\xxx\Documents\GitHub\cppLearning\2016211985 4lo\Debug\graphics17.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 graphicsd.lib(egegapi.obj) : warning LNK4099: 未找到 PDB“graphics17.pdb”(使用“graphicsd.lib(egegapi.obj)”或在“C:\Users\xxx\Documents\GitHub\cppLearning\2016211985 4lo\Debug\graphics17.pdb”中寻找)；正在链接对象，如同没有调试信息一样

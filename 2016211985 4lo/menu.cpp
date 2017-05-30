@@ -139,6 +139,7 @@ void menuForNewBranch()
 		{
 			transToLeftPort();
 			Circle a = Circle();
+			
 			draw(a);
 			transToRightPort();
 		}
