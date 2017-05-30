@@ -6,6 +6,7 @@
 #include"delta.h"
 #include"draw.h"
 #include"Circle.h"
+#include"pixelline.h"
 
 void menuForReadBranch();
 void menuForNewBranch();

@@ -7,9 +7,9 @@ void eraser()
 	Sleep(500);//防止误触，还可以更短，但是怕不安全（总觉得进出不好，容易不明不白）
 	transToRightPort();
 	clearviewport();
-	xyprintf(0, 0, "按两下Ctrl退出橡皮");
+	xyprintf(0, 0, "按Ctrl退出橡皮");
 	transToRightPort();
-	int x = 0, y = 0;
+	double x = 0.0, y = 0.0;
 	for (; is_run(); /*delay_fps(10000)*/)//监视鼠标，可惜循环不够快，算法问题，无法适应高速移动的鼠标
 	{
 		//msg = getmouse();
