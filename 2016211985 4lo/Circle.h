@@ -10,6 +10,7 @@ class Circle : public Shape
 public:
 	Circle(const Circle& a);//拷贝构造函数
 	Circle(int radius, Coordinate Circle);//圆形构造函数
+	Circle();
 	~Circle();
 	static int circleNumber;//圆形计数
 	int getCircleNumber();//获得圆形个数

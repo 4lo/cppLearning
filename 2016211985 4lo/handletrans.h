@@ -1,7 +1,8 @@
 #pragma once
+#include<graphics.h>
 /*ÇÐ»»×óÓÒÆÁ*/
-void left();
-void right();
-void recre();
+void transToLeftPort();
+void transToRightPort();
+void recreateBorder();
 
 

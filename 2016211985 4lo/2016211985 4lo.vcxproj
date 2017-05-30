@@ -22,11 +22,14 @@
     <ClInclude Include="Bar.h" />
     <ClInclude Include="Circle.h" />
     <ClInclude Include="Color.h" />
+    <ClInclude Include="ColorDisplay.h" />
     <ClInclude Include="Coordinate.h" />
     <ClInclude Include="delta.h" />
-    <ClInclude Include="documents.h" />
+    <ClInclude Include="draw.h" />
+    <ClInclude Include="eraser.h" />
     <ClInclude Include="GraphicsControl.h" />
     <ClInclude Include="handletrans.h" />
+    <ClInclude Include="menu.h" />
     <ClInclude Include="poly.h" />
     <ClInclude Include="Shape.h" />
   </ItemGroup>
@@ -34,11 +37,14 @@
     <ClCompile Include="Bar.cpp" />
     <ClCompile Include="Circle.cpp" />
     <ClCompile Include="Color.cpp" />
+    <ClCompile Include="ColorDisplay.cpp" />
     <ClCompile Include="Coordinate.cpp" />
     <ClCompile Include="delta.cpp" />
-    <ClCompile Include="documents.cpp" />
+    <ClCompile Include="draw.cpp" />
+    <ClCompile Include="eraser.cpp" />
     <ClCompile Include="GraphicsControl.cpp" />
     <ClCompile Include="handletrans.cpp" />
+    <ClCompile Include="menu.cpp" />
     <ClCompile Include="poly.cpp" />
     <ClCompile Include="project.cpp" />
     <ClCompile Include="Shape.cpp" />
@@ -101,7 +107,7 @@
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>graphics17.lib;graphicsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

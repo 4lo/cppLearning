@@ -10,6 +10,16 @@ Delta::Delta(Coordinate a, Coordinate b, Coordinate c, Color color)
 	deltaNumber++;
 }
 
+Delta::Delta()
+{
+	Coordinate a, b, c;
+	this->a = a;
+	this->b = b;
+	this->c = c;
+	setColor(1);
+	deltaNumber++;
+}
+
 void Delta::draw()
 {
 	int deltaPoints[6];
@@ -19,20 +29,6 @@ void Delta::draw()
 	deltaPoints[3] = b.getY();
 	deltaPoints[4] = c.getX();
 	deltaPoints[5] = c.getY();
-	switch (getColor())
-	{
-	case 1:setfillcolor(WHITE);
-		break;
-	case 2:setfillcolor(BLACK);
-		break;
-	case 3:setfillcolor(BLUE);
-		break;
-	case 4:setfillcolor(RED);
-		break;
-	case 5:setfillcolor(YELLOW);
-		break;
-	default:setfillcolor(EGERGB(255, 255, 255));
-	}
 	fillpoly(3, deltaPoints);
 }
 

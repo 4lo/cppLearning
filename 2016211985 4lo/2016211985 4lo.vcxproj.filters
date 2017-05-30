@@ -27,9 +27,6 @@
     <ClInclude Include="Coordinate.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="documents.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="GraphicsControl.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -37,6 +34,24 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Shape.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="delta.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="poly.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="eraser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorDisplay.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="draw.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -53,9 +68,6 @@
     <ClCompile Include="Coordinate.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="documents.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="GraphicsControl.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -66,6 +78,24 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Shape.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="delta.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="poly.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="eraser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="draw.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorDisplay.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

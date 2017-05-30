@@ -4,10 +4,12 @@
 #include "handletrans.h"
 #include "Shape.h"
 #include <fstream>
+#include <graphics.h>
 static int trueBarNumber = 0;
 class Bar : public Shape
 {
 public:
+	Bar();
 	Bar(const Bar& a);
 	Bar(Coordinate leftup, Coordinate rightdown, Color color);//矩形构造函数
 	~Bar();
@@ -22,4 +24,3 @@ private:
 	Coordinate rightdown;//右下角坐标
 	Color barColor;//矩形颜色
 };
-

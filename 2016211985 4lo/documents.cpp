@@ -46,7 +46,11 @@ void readfile(const char a[], int number)
 			break;
 		case 5:setfillcolor(YELLOW);
 			break;
-		default:setfillcolor(EGERGB(255, 255, 255));
+		default:
+		{
+			setfillcolor(EGERGB(255, 255, 255));
+			xyprintf(0, 0, "颜色读取错误");
+		}
 		}
 		bar(x1, y1, x2, y2);
 	}
@@ -90,7 +94,11 @@ void readfile(const char a[], int number)
 			break;
 		case 5:setfillcolor(YELLOW);
 			break;
-		default:setfillcolor(EGERGB(255, 255, 255));
+		default:
+			{
+				setfillcolor(EGERGB(255, 255, 255));
+				xyprintf(0, 0, "颜色读取错误");
+			}
 		}
 		fillpoly(3, deltaPoints);
 	}

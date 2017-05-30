@@ -1,5 +1,5 @@
 #include "Bar.h"
-#include "graphics.h"
+
 using namespace std;
 int Bar::barNumber = 0;
 
@@ -9,6 +9,16 @@ Bar::Bar(const Bar& a)
 	this->leftup = a.leftup;
 	this->rightdown = a.rightdown;
 	barNumber++;
+}
+
+Bar::Bar()
+{
+	Coordinate a, b;
+	this->leftup = a;
+	this->rightdown = b;
+	setColor(1);
+	barNumber++;
+	/*对矩形进行初始化并且数量+1*/
 }
 
 Bar::Bar(Coordinate leftup, Coordinate rightdown, Color color)
@@ -35,7 +45,7 @@ int Bar::getBarNumber()
 void Bar::draw()
 {
 	//int a[3] = barColor.getColor();
-	int a = getColor();
+	/*int a = getColor();
 	switch (a)
 	{
 	case 1:setfillcolor(WHITE);
@@ -49,7 +59,7 @@ void Bar::draw()
 	case 5:setfillcolor(YELLOW);
 		break;
 	default:setfillcolor(EGERGB(255, 255, 255));
-	}
+	}*/
 	bar(leftup.getX(), leftup.getY(), rightdown.getX(), rightdown.getY());
 }
 

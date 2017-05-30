@@ -10,4 +10,4 @@ using std::string;
 using std::ifstream;
 using namespace std;
 
-void readfile(string a, int number);
+void readfile(const char a[], int number);

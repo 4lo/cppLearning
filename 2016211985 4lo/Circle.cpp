@@ -10,6 +10,16 @@ Circle::Circle(const Circle& a)
 	Circle::circleNumber++;
 }
 
+Circle::Circle()
+{
+	this->Radius = 1;
+	CircleXY.setX(1);
+	CircleXY.setY(1);
+
+	Circle::circleNumber++;
+	/*对圆进行初始化，并数量+1*/
+}
+
 Circle::Circle(int radius, Coordinate CircleXY)
 {
 	this->Radius = radius;
@@ -21,8 +31,8 @@ Circle::Circle(int radius, Coordinate CircleXY)
 
 Circle::~Circle()
 {
-	Circle::circleNumber--;//删除圆时数量—1
-	xyprintf(100, 200, "存在%d个圆形", circleNumber);
+	//Circle::circleNumber--;//删除圆时数量—1
+	//xyprintf(100, 200, "存在%d个圆形", circleNumber);
 }
 
 int Circle::getCircleNumber()

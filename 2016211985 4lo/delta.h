@@ -10,6 +10,7 @@ public:
 	static int deltaNumber;
 	void draw();
 	void save();
+	Delta();
 	Delta(Coordinate a, Coordinate b, Coordinate c, Color color);
 private:
 	Coordinate a;

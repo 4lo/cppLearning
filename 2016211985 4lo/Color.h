@@ -13,6 +13,7 @@ public:
 	
 private:
 	bool isColored;
+	int *co;
 	int color;
 };
 

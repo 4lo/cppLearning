@@ -22,12 +22,12 @@ void Coordinate::changeCoordinate(int x, int y)//更改坐标
 	this->y = y;
 }
 
-int Coordinate::getX()//获得x坐标
+int Coordinate::getX() const //获得x坐标
 {
 	return x;
 }
 
-int Coordinate::getY()//获得y坐标
+int Coordinate::getY() const //获得y坐标
 {
 	return y;
 }
@@ -46,3 +46,34 @@ std::string Coordinate::getXYs()
 {
 	return "00";
 }
+
+bool Coordinate::operator == (const Coordinate& another)
+{
+	/*if ((this->x == another.x) && (this->y = another.y))
+	{
+		return true;
+	}
+	else return false;*/
+	return ((this->x == another.x) && (this->y = another.y));
+}
+
+Coordinate Coordinate::operator + (const Coordinate& another)
+{
+	Coordinate midPoint;
+	midPoint.setX((this->x + another.x) / 2);
+	midPoint.setY((this->y + another.y) / 2);
+	return midPoint;
+}
+
+void Coordinate::operator = (const Coordinate& another)
+{
+	this->x = another.getX();
+	this->y = another.getY();
+}
+
+bool Coordinate::operator != (const Coordinate& another)
+{
+	//if()
+	return true;
+}
+

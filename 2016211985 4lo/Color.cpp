@@ -7,6 +7,8 @@ Color::Color()//Ä¬ÈÏ1É«ÌîÍ¿
 
 Color::Color(int color)
 {
+	this->co = new int(1);
+	delete this->co;
 	this->color = color;
 	isColored = 1;
 }

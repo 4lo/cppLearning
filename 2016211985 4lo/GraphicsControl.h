@@ -1,4 +1,5 @@
 #pragma once
+#include<graphics.h>
 /*新建以及关闭画板的类*/
 class Graphics
 {
