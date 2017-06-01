@@ -64,3 +64,13 @@ void Circle::save()
         << getColor() << endl;
 	save.close();
 }
+
+bool Circle::operator <(const Circle& another)
+{
+	return (this->Radius < another.Radius);
+}
+
+bool Circle::operator >(const Circle& another)
+{
+	return (this->Radius > another.Radius);
+}

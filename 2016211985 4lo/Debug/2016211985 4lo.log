@@ -1,5 +1,17 @@
-﻿  pixelline.cpp
-c:\users\xxx\documents\github\cpplearning\2016211985 4lo\pixelline.cpp(59): warning C4715: “pixelline”: 不是所有的控件路径都返回值
+﻿  Coordinate.cpp
+  Color.cpp
+  Circle.cpp
+  正在生成代码...
+c:\users\xxx\documents\github\cpplearning\2016211985 4lo\coordinate.cpp(81): warning C4172: 返回局部变量或临时变量的地址
+  正在编译...
+  project.cpp
+  menu.cpp
+  draw.cpp
+c:\users\xxx\documents\github\cpplearning\2016211985 4lo\draw.cpp(173): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  delta.cpp
+  Shape.cpp
+  Bar.cpp
+  正在生成代码...
 graphicsd.lib(color.obj) : warning LNK4099: 未找到 PDB“graphics17.pdb”(使用“graphicsd.lib(color.obj)”或在“C:\Users\xxx\Documents\GitHub\cppLearning\2016211985 4lo\Debug\graphics17.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 graphicsd.lib(egecontrolbase.obj) : warning LNK4099: 未找到 PDB“graphics17.pdb”(使用“graphicsd.lib(egecontrolbase.obj)”或在“C:\Users\xxx\Documents\GitHub\cppLearning\2016211985 4lo\Debug\graphics17.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 graphicsd.lib(egegapi.obj) : warning LNK4099: 未找到 PDB“graphics17.pdb”(使用“graphicsd.lib(egegapi.obj)”或在“C:\Users\xxx\Documents\GitHub\cppLearning\2016211985 4lo\Debug\graphics17.pdb”中寻找)；正在链接对象，如同没有调试信息一样

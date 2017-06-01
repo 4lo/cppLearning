@@ -10,6 +10,7 @@ public:
 	bool operator != (const Coordinate& another);
 	void operator =  (const Coordinate& another);
 	Coordinate operator + (const Coordinate& another);
+	Coordinate& operator +=(const Coordinate& another);
 	int getX() const;//获取X坐标
 	int getY() const;//获取Y坐标
 	void setX(int x);//设置X坐标

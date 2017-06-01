@@ -9,21 +9,21 @@ Graphics::Graphics()
 	line(5, 0, 5, 645);
 	line(5, 645, 1195, 645);
 	line(1195, 0, 1195, 645);
-	line(905, 0, 905, 645);//绘制画板的基本界面
-	setviewport(0, 0, 1190, 640, 1);//设置边框，不过没什么太大意义
+	line(905, 0, 905, 645);//set a fundamental interface
+	setviewport(0, 0, 1190, 640, 1);//avoid destroying the border line when drawing and clearviewport
 	setbkcolor(EGERGB(255, 255, 255)); //设置背景颜色
-	setcolor(BLACK);//设置字体颜色
-	setfont(-15, 0, "楷体");//字体
+	setcolor(BLACK);//set color of character
+	setfont(-15, 0, "楷体");
 }
 
 Graphics::Graphics(int Width, int Height)
 {
-	initgraph(Width, Height);//自定义的肯定不如默认的好
+	initgraph(Width, Height);
 }
 
 
 
 void Graphics::closegraph()
 {
-	closegraph();//关闭
+	closegraph();
 }

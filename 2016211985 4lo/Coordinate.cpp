@@ -73,7 +73,10 @@ void Coordinate::operator = (const Coordinate& another)
 
 bool Coordinate::operator != (const Coordinate& another)
 {
-	//if()
-	return true;
+	return ((this->x != another.x)||(this->y != another.y));
 }
 
+Coordinate& Coordinate::operator +=(const Coordinate& another)
+{
+	return Coordinate(this->x + another.x, this->y + another.y);
+}

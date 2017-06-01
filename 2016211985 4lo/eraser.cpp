@@ -1,31 +1,38 @@
-//橡皮功能，受铅笔的启发，读出鼠标状态后，用视窗和清楚视窗来实现局部橡皮，和铅笔一样实用
+//eraser，inspired after "pixelline"，very useful
 
 #include"handletrans.h"
 extern mouse_msg msg;
 void eraser()
 {
-	Sleep(500);//防止误触，还可以更短，但是怕不安全（总觉得进出不好，容易不明不白）
+	Sleep(500);//to optimize operation
 	transToRightPort();
 	clearviewport();
 	xyprintf(0, 0, "按Ctrl退出橡皮");
 	transToRightPort();
-	double x = 0.0, y = 0.0;
-	for (; is_run(); /*delay_fps(10000)*/)//监视鼠标，可惜循环不够快，算法问题，无法适应高速移动的鼠标
+	flushmouse();
+	int i = 0, x[256] = { 0 }, y[256] = { 0 }, *p1, *p2;
+	p1 = &x[i];
+	p2 = &y[i];
+	for (; is_run(); /*delay_fps(10000)*/)//Shortcoming : not fast enough to erase smoothly
 	{
-		//msg = getmouse();
-		if (keystate(0x1))//如果左键按下
+		if (keystate(0x1))//left key of mouse
 		{
 			transToLeftPort();
+			mousepos(p1, p2);
+			if (i % 256 == 255)
+			{
+				i = 0;
+			}
+			else i++;
 			while (mousemsg())
 			{
 				msg = getmouse();
 			}
-			x = msg.x;
-			y = msg.y;//取得鼠标所在位置的xy
-			setviewport(x - 10, y - 10, x + 10, y + 10);//以鼠标为中心，建立一个20x20小视窗
-			clearviewport();//橡皮核心
-							//if (keystate(VK_CONTROL) == 1)break;
+			setviewport(x[i] + 10,  y[i] + 10, x[i] - 10, y[i] - 10);//centered on the mouse，set a 20x20 viewport
+			clearviewport();
+			flushmouse();
 		}
-		if (keystate(VK_CONTROL) == 1)break;//跳出循环
+		else if ((keystate(VK_CONTROL) == 1))break;
 	}
+
 }

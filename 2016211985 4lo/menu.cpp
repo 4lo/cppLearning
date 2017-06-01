@@ -29,54 +29,52 @@ void menuForReadBranch()
 		{
 			msg = getmouse();
 		}
-		x = msg.x;
-		y = msg.y;
-		if ((y > 260 && y < 280 && msg.is_left() && x>910) || keystate(49))
+		if ((msg.y > 260 && msg.y < 280 && msg.is_left() && msg.x>910) || keystate(49))
 		{
 			transToLeftPort();
 			clearviewport();
 			transToRightPort();
 		}
-		if ((y > 280 && y < 300 && msg.is_left() && x>910) || keystate(50))
+		if ((msg.y > 280 && msg.y < 300 && msg.is_left() && msg.x>910) || keystate(50))
 		{
 			transToLeftPort();
 			Delta a = Delta();
 			draw(a);
 			transToRightPort();
 		}
-		if ((y > 300 && y < 320 && msg.is_left() && x>910) || keystate(51))
+		if ((msg.y > 300 && msg.y < 320 && msg.is_left() && msg.x>910) || keystate(51))
 		{
 			transToLeftPort();
 			Circle a = Circle();
 			draw(a);
 			transToRightPort();
 		}
-		if ((y > 320 && y < 340 && msg.is_left() && x>910) || keystate(52))
+		if ((msg.y > 320 && msg.y < 340 && msg.is_left() && msg.x>910) || keystate(52))
 		{
 			transToLeftPort();
 			//	drawline();
 			transToRightPort();
 		}
-		if ((y > 340 && y < 360 && msg.is_left() && x>910) || keystate(53))
+		if ((msg.y > 340 && msg.y < 360 && msg.is_left() && msg.x>910) || keystate(53))
 		{
 			transToLeftPort();
 			Bar a = Bar();
 			draw(a);
 			transToRightPort();
 		}
-		if ((y > 360 && y < 380 && msg.is_left() && x>910) || keystate(54))
+		if ((msg.y > 360 && msg.y < 380 && msg.is_left() && msg.x>910) || keystate(54))
 		{
 			transToLeftPort();
 			//			mouse();
 			transToRightPort();
 		}
-		if ((y > 380 && y < 400 && msg.is_left() && x>910) || keystate(55))
+		if ((msg.y > 380 && msg.y < 400 && msg.is_left() && msg.x>910) || keystate(55))
 		{
 			transToLeftPort();
 			eraser();
 			transToRightPort();
 		}
-		if ((y > 420 && y < 440 && msg.is_left() && x>910) || keystate(56))
+		if ((msg.y > 420 && msg.y < 440 && msg.is_left() && msg.x>910) || keystate(56))
 		{
 			transToRightPort();
 			clearviewport();
@@ -115,54 +113,52 @@ void menuForNewBranch()
 		{
 			msg = getmouse();
 		}
-		x = msg.x;
-		y = msg.y;
-		if ((y > 260 && y < 280 && msg.is_left() && x>910) || keystate(49))
+		if ((msg.y > 260 && msg.y < 280 && msg.is_left() && msg.x>910) || keystate(49))
 		{
 			transToLeftPort();
 			clearviewport();
 			transToRightPort();
 		}
-		if ((y > 280 && y < 300 && msg.is_left() && x>910) || keystate(50))
+		if ((msg.y > 280 && msg.y < 300 && msg.is_left() && msg.x>910) || keystate(50))
 		{
 			transToLeftPort();
 			Delta a = Delta();
 			draw(a);
 			transToRightPort();
 		}
-		if ((y > 300 && y < 320 && msg.is_left() && x>910) || keystate(51))
+		if ((msg.y > 300 && msg.y < 320 && msg.is_left() && msg.x>910) || keystate(51))
 		{
 			transToLeftPort();
 			Circle a = Circle();
 			draw(a);
 			transToRightPort();
 		}
-		if ((y > 320 && y < 340 && msg.is_left() && x>910) || keystate(52))
+		if ((msg.y > 320 && msg.y < 340 && msg.is_left() && msg.x>910) || keystate(52))
 		{
 			transToLeftPort();
 		//	drawline();
 			transToRightPort();
 		}
-		if ((y > 340 && y < 360 && msg.is_left() && x>910) || keystate(53))
+		if ((msg.y > 340 && msg.y < 360 && msg.is_left() && msg.x>910) || keystate(53))
 		{
 			transToLeftPort();
 			Bar a = Bar();
 			draw(a);
 			transToRightPort();
 		}
-		if ((y > 360 && y < 380 && msg.is_left() && x>910) || keystate(54))
+		if ((msg.y > 360 && msg.y < 380 && msg.is_left() && msg.x>910) || keystate(54))
 		{
 			transToLeftPort();
 			pixelline();
 			transToRightPort();
 		}
-		if ((y > 380 && y < 400 && msg.is_left() && x>910) || keystate(55))
+		if ((msg.y > 380 && msg.y < 400 && msg.is_left() && msg.x>910) || keystate(55))
 		{
 			transToLeftPort();
       		eraser();
 			transToRightPort();
 		}
-		if ((y > 420 && y < 440 && msg.is_left() && x>910) || keystate(56))
+		if ((msg.y > 420 && msg.y < 440 && msg.is_left() && msg.x>910) || keystate(56))
 		{
 			transToRightPort();
 			clearviewport();

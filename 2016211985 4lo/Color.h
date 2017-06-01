@@ -1,19 +1,19 @@
 #pragma once
-/*颜色类*/
-#include<string>
+//color
 #include<graphics.h>
-using std::string;
+
 class Color
 {
 public:
 	Color();
-	Color(int color);//初始化颜色
-	void setColor(int color);//对颜色进行设置
-	int getColor();//获得颜色
-	
+	Color(int color);
+	void setColor(int color);
+	int getColor();
+	void operator =(const Color& another);
+	bool operator ==(const Color& another);
+	bool operator !=(const Color& another);
 private:
 	bool isColored;
-	int *co;
 	int color;
 };
 

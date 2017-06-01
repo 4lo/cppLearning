@@ -21,8 +21,8 @@ int main()
 	system("md CIRCLE");
 	system("md BAR");
 	system("md POLY");
-	Graphics *newgraph = new Graphics();//新建一个画布
-	int x = 0, y = 0, pri = 1;//xy 用来记录鼠标  pri已经2017后过时，没有实际意义
+	Graphics *newgraph = new Graphics();//Create a new canvas
+	//int x = 0, y = 0;
 	for (; is_run(); delay_fps(10))//循环体来保证程序持续运行
 	{
 		flushkey();
@@ -43,9 +43,7 @@ int main()
 		{
 			msg = getmouse();
 		}
-		x = msg.x;
-		y = msg.y;
-		if ((y > 40 && y < 70 && msg.is_left() && x>910) || keystate(49))//读取
+		if ((msg.y > 40 && msg.y < 70 && msg.is_left() && msg.x>910) || keystate(49))//读取
 		{
 			transToRightPort();
 			flushkey();
@@ -54,7 +52,7 @@ int main()
 			menuForReadBranch();
 			
 		}
-		if ((y > 70 && y < 90 && msg.is_left() && x>910) || keystate(50))//新建
+		if ((msg.y > 70 && msg.y < 90 && msg.is_left() && msg.x>910) || keystate(50))//新建
 		{
 			transToRightPort();
 			flushkey();
@@ -62,6 +60,6 @@ int main()
 			menuForNewBranch();
 		}
 	}
-	delete[] newgraph;
+	delete newgraph;
 	return 0;
 }
