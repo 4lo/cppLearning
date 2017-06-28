@@ -39,6 +39,7 @@ void menuForReadBranch()
 		{
 			transToLeftPort();
 			Delta a = Delta();
+			a.draw();
 			draw(a);
 			transToRightPort();
 		}
